@@ -1,3 +1,4 @@
+DROP TABLE visitcompany;
 --------------------------CREAR BASE DE DATOS--------------------------------
 CREATE DATABASE visitcompany;
 --------------------------USAR BASE DE DATOS---------------------------------
@@ -27,8 +28,5 @@ CREATE TABLE type_user(
     nametypeuser VARCHAR(25),
     CONSTRAINT idtypeuser PRIMARY KEY (idtypeuser)
 );
-
-DROP TABLE visitcompany;
-
 -------------------------------CREACION DE PROCEDIMIENTOS ALMACENADOS------------------------
 CREATE PROCEDURE getiduser(IN email VARCHAR(255),IN pass VARCHAR(255),IN iduserf int) BEGIN INSERT INTO users(emailuser,passworduser,idtypeuserf) VALUES(email,pass,iduserf); SELECT last_insert_id() as lastiduser; END;

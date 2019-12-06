@@ -6,7 +6,6 @@ try{
 }catch(Exception $e){
     die("Error: " . $e->GetMessage());
 }
-// Función para ejecutar consultas SELECT
 function Consulta($query)
 {
     global $Cn;
@@ -21,9 +20,6 @@ function Consulta($query)
     }
 }
 
-// Función que recibe un insert y regresa el consecutivo que le genero en la llave primaria
-// por ejemplo: Insert Into cuerpo.clasif (nomclasif) values ('Articulo en Extenso') 
-// Returning idclasif, nomclasif;
 function EjecutaConsecutivo($sentencia, $llave){
     global $Cn;
     try {
@@ -37,7 +33,6 @@ function EjecutaConsecutivo($sentencia, $llave){
         return 0;
     }
 }
-// Sirve para ejecutar una sentencia INSERT, UPDATE O DELETE
 function Ejecuta ($sentencia){
     global $Cn;
     try {
@@ -45,7 +40,6 @@ function Ejecuta ($sentencia){
         $result->closeCursor();
         return 1; // Exito  
     } catch (Exception $e) {
-        //die("Error en la linea: " + $e->getLine() + " MSG: " + $e->GetMessage());
         return 0; // Fallo
     }
 }

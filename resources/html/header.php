@@ -1,5 +1,4 @@
 ﻿<header>
-<!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
   <li><a href="../Empresas/">Empresas</a></li>
   <li><a href="../Usuarios/">Usuarios</a></li>

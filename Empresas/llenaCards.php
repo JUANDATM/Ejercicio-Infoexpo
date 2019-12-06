@@ -14,7 +14,8 @@ $fill = ConsultaEmpressa();
                           <img class='' src='images/office.jpg'>
                        </div>
                         <div class='card-content'>
-                           <span class='card-title activator grey-text text-darken-4'>".$namecompany."<i class='material-icons right' data-idcompany=". $idcompany.">more_vert</i></span>
+                           <span class='card-title grey-text text-darken-4'>".$namecompany."</span>
+                           <span><i class='material-icons activator right' data-idcompany=". $idcompany.">more_vert</i></span>
                         </div>
                         <div class='card-reveal'>
                           <span class='card-title grey-text text-darken-4'>".$namecompany.' VISITAS : '.$visits."<i class='material-icons right'>close</i></span>
