@@ -1,0 +1,27 @@
+<!-- JUAN DANIEL TORRES MORENO
+     Tecnologico Nacional de Mexico en Roque
+     git: https://github.com/JUANDATM
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Multiplication Table</title>
+</head>
+
+<body>
+    <script>
+        let multiplicationTable, row, column, name;
+        multiplicationTable = "<table border = '5' width = '70%' align= center >";
+        for (name = 1; name <= 10; name++) multiplicationTable = multiplicationTable + "<td>Tabla del " + name + "</td>";
+        for (row = 1; row <= 10; row++) {
+            multiplicationTable = multiplicationTable + "<tr>";
+            for (column = 1; column <= 10; column++) multiplicationTable = multiplicationTable + "<td>" + column + " X " + row + " = " + (column * row) + "</td>";
+            multiplicationTable = multiplicationTable + "</tr>";
+        }
+        multiplicationTable = multiplicationTable + "</table>";
+        document.write(multiplicationTable);
+    </script>
+</body>
+
+</html>
